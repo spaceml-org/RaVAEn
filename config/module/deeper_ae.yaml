@@ -1,0 +1,10 @@
+---
+class: src.models.module.Module
+
+model_class: 'src.models.ae_vae_models.deeper_ae.DeeperAE'
+
+model_cls_args:
+  hidden_channels: [32, 64, 128] # number of channels after each downscale. Reversed on upscale
+  latent_dim: 100                # bottleneck size
+  extra_depth_on_scale: 2        # after each downscale and upscale, this many convolutions are applied
+  visualisation_channels: ${channels.visualisation_channels}

@@ -1,0 +1,20 @@
+---
+train:
+        transformer_cls: 'src.data.transformations.Transformer'
+
+        transform_list:
+            - 'src.data.transformations.RandomBandShifts':
+                transf_args:
+                    tile_size: 34
+                    crop_size: 32
+                    p: 0. 
+                    # 1. all are shifted
+                    # 0. none are shifted ~ used to simulate non data augmented evaluation set
+test:
+
+        transformer_cls: 'src.data.transformations.Transformer'
+
+        transform_list:
+            - 'src.data.transformations.CenterCrop':
+                transf_args:
+                    crop_size: 32

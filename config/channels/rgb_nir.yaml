@@ -1,0 +1,6 @@
+---
+# Possible channels for worldfloods data are:
+#     ['B1','B2','B3','B4','B5','B6','B7','B8','B8A','B9','B10','B11','B12','QA60','probability']
+channels: ['B4','B3','B2', 'B8'] # RGB + NIR (in band 8) ~ all are in ground resolution of 10m
+
+visualisation_channels: [0, 1, 2]

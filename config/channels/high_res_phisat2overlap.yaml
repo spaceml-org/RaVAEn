@@ -1,0 +1,10 @@
+---
+# Possible channels for worldfloods data are:
+#     ['B1','B2','B3','B4','B5','B6','B7','B8','B8A','B9','B10','B11','B12','QA60','probability']
+
+# Overlapping bands Sentinel-2 and Phi-Sat-2 would be B2, B3, B4, B5, B6, B7 and B8
+# (all 10 or 20m)
+
+channels: ['B2','B3','B4','B5','B6','B7', 'B8']
+
+visualisation_channels: [2, 1, 0]

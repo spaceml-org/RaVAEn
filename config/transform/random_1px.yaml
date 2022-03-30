@@ -1,0 +1,18 @@
+---
+train:
+        transformer_cls: 'src.data.transformations.Transformer'
+
+        transform_list:
+            - 'src.data.transformations.RandomBandShifts':
+                transf_args:
+                    tile_size: 33
+                    crop_size: 32
+                    p: 0.5
+test:
+
+        transformer_cls: 'src.data.transformations.Transformer'
+
+        transform_list:
+            - 'src.data.transformations.CenterCrop':
+                transf_args:
+                    crop_size: 32

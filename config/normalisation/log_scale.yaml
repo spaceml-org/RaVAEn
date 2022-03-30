@@ -1,0 +1,147 @@
+---
+normaliser_cls: 'src.data.normalisers.CompositeNormaliser'
+
+normaliser_args:
+  normaliser_specs:
+    B1: 
+      normaliser_cls: 'src.data.normalisers.ListNormaliser'
+      normaliser_args:
+        normaliser_specs:
+          - 'src.data.normalisers.LogNormaliser': {}
+          - 'src.data.normalisers.RescaleNormaliser':
+              x0: 7.3
+              x1: 7.6
+              y0: -1
+              y1: 1
+
+    B2: 
+      normaliser_cls: 'src.data.normalisers.ListNormaliser'
+      normaliser_args:
+        normaliser_specs:
+          - 'src.data.normalisers.LogNormaliser': {}
+          - 'src.data.normalisers.RescaleNormaliser':
+              x0: 6.9
+              x1: 7.5
+              y0: -1
+              y1: 1
+
+    B3: 
+      normaliser_cls: 'src.data.normalisers.ListNormaliser'
+      normaliser_args:
+        normaliser_specs:
+          - 'src.data.normalisers.LogNormaliser': {}
+          - 'src.data.normalisers.RescaleNormaliser':
+              x0: 6.5
+              x1: 7.4
+              y0: -1
+              y1: 1
+
+    B4: 
+      normaliser_cls: 'src.data.normalisers.ListNormaliser'
+      normaliser_args:
+        normaliser_specs:
+          - 'src.data.normalisers.LogNormaliser': {}
+          - 'src.data.normalisers.RescaleNormaliser':
+              x0: 6.2
+              x1: 7.5
+              y0: -1
+              y1: 1
+
+    B5: 
+      normaliser_cls: 'src.data.normalisers.ListNormaliser'
+      normaliser_args:
+        normaliser_specs:
+          - 'src.data.normalisers.LogNormaliser': {}
+          - 'src.data.normalisers.RescaleNormaliser':
+              x0: 6.1
+              x1: 7.5
+              y0: -1
+              y1: 1
+
+    B6: 
+      normaliser_cls: 'src.data.normalisers.ListNormaliser'
+      normaliser_args:
+        normaliser_specs:
+          - 'src.data.normalisers.LogNormaliser': {}
+          - 'src.data.normalisers.RescaleNormaliser':
+              x0: 6.5
+              x1: 8
+              y0: -1
+              y1: 1
+
+    B7: 
+      normaliser_cls: 'src.data.normalisers.ListNormaliser'
+      normaliser_args:
+        normaliser_specs:
+          - 'src.data.normalisers.LogNormaliser': {}
+          - 'src.data.normalisers.RescaleNormaliser':
+              x0: 6.5
+              x1: 8
+              y0: -1
+              y1: 1
+
+    B8: 
+      normaliser_cls: 'src.data.normalisers.ListNormaliser'
+      normaliser_args:
+        normaliser_specs:
+          - 'src.data.normalisers.LogNormaliser': {}
+          - 'src.data.normalisers.RescaleNormaliser':
+              x0: 6.5
+              x1: 8
+              y0: -1
+              y1: 1
+
+    B8A: 
+      normaliser_cls: 'src.data.normalisers.ListNormaliser'
+      normaliser_args:
+        normaliser_specs:
+          - 'src.data.normalisers.LogNormaliser': {}
+          - 'src.data.normalisers.RescaleNormaliser':
+              x0: 6.5
+              x1: 8
+              y0: -1
+              y1: 1
+
+    B9: 
+      normaliser_cls: 'src.data.normalisers.ListNormaliser'
+      normaliser_args:
+        normaliser_specs:
+          - 'src.data.normalisers.LogNormaliser': {}
+          - 'src.data.normalisers.RescaleNormaliser':
+              x0: 6
+              x1: 7
+              y0: -1
+              y1: 1
+
+    B10: 
+      normaliser_cls: 'src.data.normalisers.ListNormaliser'
+      normaliser_args:
+        normaliser_specs:
+          - 'src.data.normalisers.LogNormaliser': {}
+          - 'src.data.normalisers.RescaleNormaliser':
+              x0: 2.5
+              x1: 4.5
+              y0: -1
+              y1: 1
+
+    B11: 
+      normaliser_cls: 'src.data.normalisers.ListNormaliser'
+      normaliser_args:
+        normaliser_specs:
+          - 'src.data.normalisers.LogNormaliser': {}
+          - 'src.data.normalisers.RescaleNormaliser':
+              x0: 6
+              x1: 8
+              y0: -1
+              y1: 1
+
+    B12: 
+      normaliser_cls: 'src.data.normalisers.ListNormaliser'
+      normaliser_args:
+        normaliser_specs:
+          - 'src.data.normalisers.LogNormaliser': {}
+          - 'src.data.normalisers.RescaleNormaliser':
+              x0: 6
+              x1: 8
+              y0: -1
+              y1: 1

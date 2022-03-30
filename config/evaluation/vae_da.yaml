@@ -1,0 +1,70 @@
+---
+plot_sequences: true # optional to plot all 5+ frame sequences on wandb
+save_plots_locally: false # optional to save plots on local machine
+visualisation_channels: ${channels.visualisation_channels}
+with_colormaps: true
+mask_out_clouds: true
+
+input_trans_cls: ${transform.train.transformer_cls}
+input_trans_args: ${transform.train.transform_list}
+
+target_trans_cls: ${transform.test.transformer_cls}
+target_trans_args: ${transform.test.transform_list}
+
+detection_methods:
+  # Table 1 ~ basic
+
+  - method: "src.evaluation.methods.CosPixels" # Cosine baseline, mem 1
+    method_args:
+      tile_size: [32, 32]
+      overlap: [2,2]
+
+  - method: "src.evaluation.methods.DiffPixels" # RMSE baseline, mem 1
+    method_args:
+      tile_size: [32, 32]
+      overlap: [2,2]
+
+  - method: "src.evaluation.methods.CosEmbeddingImage" # Cosine embedding, mem 1
+    method_args: 
+      tile_size: [32,32]
+      overlap: [2,2]
+
+  - method: "src.evaluation.methods.DiffEmbeddingImage" # RMSE embedding, mem 1
+    method_args: 
+      tile_size: [32,32]
+      overlap: [2,2]
+        
+  - method: "src.evaluation.methods.KLDivEmbeddingImage" # KL-div (mem 1)
+    method_args: 
+      tile_size: [32,32]
+      overlap: [2,2]
+    
+  - method: "src.evaluation.methods.WasserEmbeddingImage" # Wasserstein (mem 1)
+    method_args: 
+      tile_size: [32,32]
+      overlap: [2,2]
+
+  # Table 2 ~ with memory
+
+  - method: "src.evaluation.methods.CosPixels" # Cosine baseline, mem 3
+    method_args:
+      memory_size: 3
+      tile_size: [32,32]
+      overlap: [2,2]
+  
+  - method: "src.evaluation.methods.CosEmbeddingImage" # Cosine embedding, mem 3
+    method_args: 
+      memory_size: 3
+      tile_size: [32,32]
+      overlap: [2,2]
+
+    
+summary_stat_methods:
+
+  - method: "src.evaluation.methods.AreaUnderPrecisionRecall"
+    method_args: {}
+    
+  - method: "src.evaluation.methods.PrecisionAt100Recall"
+    method_args: {}
+    
+    

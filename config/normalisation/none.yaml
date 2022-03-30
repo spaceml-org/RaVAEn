@@ -1,0 +1,82 @@
+---
+normaliser_cls: 'src.data.normalisers.CompositeNormaliser'
+
+normaliser_args:
+  normaliser_specs:
+    B1: 
+      normaliser_cls: 'src.data.normalisers.ListNormaliser'
+      normaliser_args:
+        normaliser_specs:
+          - 'src.data.normalisers.NoNormaliser': {}
+
+    B2: 
+      normaliser_cls: 'src.data.normalisers.ListNormaliser'
+      normaliser_args:
+        normaliser_specs:
+          - 'src.data.normalisers.NoNormaliser': {}
+
+    B3: 
+      normaliser_cls: 'src.data.normalisers.ListNormaliser'
+      normaliser_args:
+        normaliser_specs:
+          - 'src.data.normalisers.NoNormaliser': {}
+
+    B4: 
+      normaliser_cls: 'src.data.normalisers.ListNormaliser'
+      normaliser_args:
+        normaliser_specs:
+          - 'src.data.normalisers.NoNormaliser': {}
+
+    B5: 
+      normaliser_cls: 'src.data.normalisers.ListNormaliser'
+      normaliser_args:
+        normaliser_specs:
+          - 'src.data.normalisers.NoNormaliser': {}
+
+    B6: 
+      normaliser_cls: 'src.data.normalisers.ListNormaliser'
+      normaliser_args:
+        normaliser_specs:
+          - 'src.data.normalisers.NoNormaliser': {}
+
+    B7: 
+      normaliser_cls: 'src.data.normalisers.ListNormaliser'
+      normaliser_args:
+        normaliser_specs:
+          - 'src.data.normalisers.NoNormaliser': {}
+
+    B8: 
+      normaliser_cls: 'src.data.normalisers.ListNormaliser'
+      normaliser_args:
+        normaliser_specs:
+          - 'src.data.normalisers.NoNormaliser': {}
+
+    B8A: 
+      normaliser_cls: 'src.data.normalisers.ListNormaliser'
+      normaliser_args:
+        normaliser_specs:
+          - 'src.data.normalisers.NoNormaliser': {}
+
+    B9: 
+      normaliser_cls: 'src.data.normalisers.ListNormaliser'
+      normaliser_args:
+        normaliser_specs:
+          - 'src.data.normalisers.NoNormaliser': {}
+
+    B10: 
+      normaliser_cls: 'src.data.normalisers.ListNormaliser'
+      normaliser_args:
+        normaliser_specs:
+          - 'src.data.normalisers.NoNormaliser': {}
+
+    B11: 
+      normaliser_cls: 'src.data.normalisers.ListNormaliser'
+      normaliser_args:
+        normaliser_specs:
+          - 'src.data.normalisers.NoNormaliser': {}
+
+    B12: 
+      normaliser_cls: 'src.data.normalisers.ListNormaliser'
+      normaliser_args:
+        normaliser_specs:
+          - 'src.data.normalisers.NoNormaliser': {}

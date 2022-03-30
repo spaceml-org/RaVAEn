@@ -1,0 +1,13 @@
+---
+# Possible channels for worldfloods data are:
+#     ['B1','B2','B3','B4','B5','B6','B7','B8','B8A','B9','B10','B11','B12','QA60','probability']
+
+# Bands B11 and B12 are very predictive for water (the higher the wavelength the better for water)
+# B2, B3, B4, B8, B11 and B12 might be interesting since those overlap with Landsat 8 (and Landsat 9 which was launched last month)
+
+
+channels: ['B4','B3','B2', 'B8', 'B11', 'B12'] 
+# RGB + NIR (in band 8) ~ all are in ground resolution of 10m
+#         + B11 + B12 (predictive for water) (still at least 20m)
+
+visualisation_channels: [0, 1, 2]

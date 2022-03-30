@@ -1,0 +1,8 @@
+---
+class: src.models.module.Module
+
+model_class: 'src.models.ae_vae_models.simple_vae.SimpleVAE'
+
+model_cls_args:
+  latent_dim: 1024
+  visualisation_channels: ${channels.visualisation_channels}

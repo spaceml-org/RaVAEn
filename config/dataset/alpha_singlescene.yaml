@@ -1,0 +1,84 @@
+---
+# location in bucket: worldfloods_change_trainSingleScene_1800x2600_with_val
+data_module_name: "alpha_singlescene"
+
+# Root directory for train, val and test data, nested in folders inside this location
+root_folder: "/data/local/worldfloods_change_trainSingleScene_1800x2600_with_val"
+
+window_size: [32, 32]
+
+train:
+  folder_filter:
+    - "R:A_EMSR349_09*"
+
+  dataset_cls: 'src.data.dataset.LocationDataset'
+  dataset_cls_args:
+    tiling_strategy_cls: 'src.data.tiling_strategy.TilingStrategyFullGrid'
+    tiling_strategy_args:
+      window_size: ${dataset.window_size}
+      overlap: [0, 0]
+
+    dataset_specs:
+      - src.data.dataset.SingleFolderImageDataset:
+          folder_path: 'S2'
+          normaliser_cls: ${normalisation.normaliser_cls}
+          normaliser_args: ${normalisation.normaliser_args}
+
+          channels: ${channels.channels}
+
+  shuffle: true
+
+  batch_size: ${training.batch_size_test}
+  num_workers: ${training.num_workers}
+
+valid:
+  folder_filter:
+    - "R:B_EMSR349_07*"
+
+  dataset_cls: 'src.data.dataset.LocationDataset'
+  dataset_cls_args:
+    tiling_strategy_cls: 'src.data.tiling_strategy.TilingStrategyFullGrid'
+    tiling_strategy_args:
+      window_size: ${dataset.window_size}
+      overlap: [0, 0]
+
+    dataset_specs:
+      - src.data.dataset.SingleFolderImageDataset:
+          folder_path: 'S2'
+          filter_cls: 'src.data.filters.SliceFilter'
+          filter_args:
+            f_slice: ':'
+
+          normaliser_cls: ${normalisation.normaliser_cls}
+          normaliser_args: ${normalisation.normaliser_args}
+
+          channels: ${channels.channels}
+
+  batch_size: ${training.batch_size_test}
+  num_workers: ${training.num_workers}
+
+test:
+  folder_filter:
+    - "R:B_EMSR349_07*"
+
+  dataset_cls: 'src.data.dataset.LocationDataset'
+  dataset_cls_args:
+    tiling_strategy_cls: 'src.data.tiling_strategy.TilingStrategyFullGrid'
+    tiling_strategy_args:
+      window_size: ${dataset.window_size}
+      overlap: [0, 0]
+
+    dataset_specs:
+      - src.data.dataset.SingleFolderImageDataset:
+          folder_path: 'S2'
+          filter_cls: 'src.data.filters.SliceFilter'
+          filter_args:
+            f_slice: '-1:'
+
+          normaliser_cls: ${normalisation.normaliser_cls}
+          normaliser_args: ${normalisation.normaliser_args}
+
+          channels: ${channels.channels}
+
+  batch_size: ${training.batch_size_test}
+  num_workers: ${training.num_workers}

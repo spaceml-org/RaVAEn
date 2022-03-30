@@ -1,0 +1,7 @@
+---
+# Possible channels for worldfloods data are:
+#     ['B1','B2','B3','B4','B5','B6','B7','B8','B8A','B9','B10','B11','B12','QA60','probability']
+# Choosing the channels at 10-20m resolution
+channels: ['B2','B3','B4','B5','B6','B7','B8','B8A','B11','B12']
+
+visualisation_channels: [2, 1, 0]

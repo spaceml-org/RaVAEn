@@ -1,0 +1,7 @@
+---
+class: src.models.module.Module
+
+model_class: 'src.models.ae_vae_models.simple_ae.SimpleAE'
+
+model_cls_args:
+  visualisation_channels: ${channels.visualisation_channels}

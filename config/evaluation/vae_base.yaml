@@ -1,0 +1,45 @@
+---
+plot_sequences: true # optional to plot all 5+ frame sequences on wandb
+save_plots_locally: false # optional to save plots on local machine
+visualisation_channels: ${channels.visualisation_channels}
+with_colormaps: true
+mask_out_clouds: true
+
+detection_methods:
+
+  - method: "src.evaluation.methods.CosEmbeddingImage"
+    method_args: 
+      tile_size: ${dataset.window_size}
+      overlap: ${dataset.test_overlap}
+
+  - method: "src.evaluation.methods.CosPixels"
+    method_args:
+      tile_size: [32, 32]
+      overlap: ${dataset.test_overlap}
+
+  - method: "src.evaluation.methods.DiffPixels"
+    method_args:
+      tile_size: [32, 32]
+      overlap: ${dataset.test_overlap}
+
+        
+  - method: "src.evaluation.methods.KLDivEmbeddingImage"
+    method_args: 
+      tile_size: ${dataset.window_size}
+      overlap: ${dataset.test_overlap}
+    
+  - method: "src.evaluation.methods.WasserEmbeddingImage"
+    method_args: 
+      tile_size: ${dataset.window_size}
+      overlap: ${dataset.test_overlap}
+
+    
+summary_stat_methods:
+
+  - method: "src.evaluation.methods.AreaUnderPrecisionRecall"
+    method_args: {}
+    
+  - method: "src.evaluation.methods.PrecisionAt100Recall"
+    method_args: {}
+    
+    

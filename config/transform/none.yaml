@@ -1,0 +1,10 @@
+---
+train:
+        transformer_cls: 'src.data.transformations.NoTransformer'
+
+        transform_list: []
+
+test:
+        transformer_cls: 'src.data.transformations.NoTransformer'
+
+        transform_list: []

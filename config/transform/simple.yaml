@@ -1,0 +1,28 @@
+---
+train:
+        transformer_cls: 'src.data.transformations.Transformer'
+
+        transform_list:
+            - 'kornia.augmentation.CenterCrop':
+                transf_args:
+                    size: 32
+                    align_corners: False
+                    p: 1.
+
+            - 'kornia.augmentation.RandomMotionBlur':
+                transf_args:
+                    kernel_size: 5
+                    angle: 0
+                    direction: 1. 
+                    p: 0.5
+
+test:
+
+        transformer_cls: 'src.data.transformations.Transformer'
+
+        transform_list:
+            - 'kornia.augmentation.CenterCrop':
+                transf_args:
+                    size: 32
+                    align_corners: False
+                    p: 1.
