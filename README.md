@@ -16,7 +16,7 @@
 <p align="center">
   <a href="https://arxiv.org/abs/2111.02995">NeurIPS workshop paper</a> •
   <a href="https://www.youtube.com/watch?v=ALtYfcuLzxI">video from AI+HADR'21</a> •
-  <a href="notebooks/inference_demo.ipynb">Quick Colab Example <img src="https://colab.research.google.com/assets/colab-badge.svg" height=16px></a>
+  <a href="https://colab.research.google.com/github/spaceml-org/RaVAEn/blob/master/notebooks/inference_demo.ipynb">Quick Colab Example <img src="https://colab.research.google.com/assets/colab-badge.svg" height=16px></a>
 </p>
 
 
@@ -39,7 +39,7 @@ The full annotated dataset used for evaluation is hosted on Google Drive <a href
     <img src="_illustrations/map_dataset.jpg" alt="Map of the events" width="500px">
 </p>
 
-For dataset inspection use the prepared <a href="notebooks/data_exploration_demo.ipynb">Colab Dataset Exploration demo <img src="https://colab.research.google.com/assets/colab-badge.svg" height=16px></a>.
+For dataset inspection use the prepared <a href="https://colab.research.google.com/github/spaceml-org/RaVAEn/blob/master/notebooks/data_exploration_demo.ipynb">Colab Dataset Exploration demo <img src="https://colab.research.google.com/assets/colab-badge.svg" height=16px></a>.
 
 ### Code examples
 
@@ -69,7 +69,7 @@ To start using our model for inference, it's best to start with the prepared <a 
 
 **Training**
 
-For a fast demo on how to train these models on a custom folder of locations, check the <a href="notebooks/training_demo.ipynb"> Colab Training demo <img src="https://colab.research.google.com/assets/colab-badge.svg" height=16px></a> as that presents an easy entry point to this repository.
+For a fast demo on how to train these models on a custom folder of locations, check the <a href="notebooks/training_demo.ipynb">Training demo</a> as that presents an easy entry point to this repository.
 To reproduce the same training process as reported in the paper, you will need to download the whole WorldFloods dataset (see <a href="https://github.com/spaceml-org/ml4floods">here</a>) and prepare the same folder structure as we chose for the validation datasets.
 
 ```bash
