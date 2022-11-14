@@ -14,6 +14,7 @@
 </p>
 
 <p align="center">
+   <a href="https://www.nature.com/articles/s41598-022-19437-5"> Nature Scientific Report Paper </a> •
   <a href="https://arxiv.org/abs/2111.02995">NeurIPS workshop paper</a> •
   <a href="https://www.youtube.com/watch?v=ALtYfcuLzxI">video from AI+HADR'21</a> •
   <a href="https://colab.research.google.com/github/spaceml-org/RaVAEn/blob/master/notebooks/inference_demo.ipynb">Quick Colab Example <img src="https://colab.research.google.com/assets/colab-badge.svg" height=16px></a>
@@ -95,6 +96,19 @@ Our project is named after the two ravens in Norse mythology who are helping spi
 ## Citation
 If you find RaVAEn useful in your research, please consider citing the following paper:
 ```
+ @article{ruzicka_ravaen_2022,
+	title = {{RaVÆn}: unsupervised change detection of extreme events using {ML} on-board satellites},
+	volume = {12},
+	issn = {2045-2322},
+	url = {https://www.nature.com/articles/s41598-022-19437-5},
+	doi = {10.1038/s41598-022-19437-5},
+	number = {1},
+	journal = {Scientific Reports},
+	author = {Růžička, Vít and Vaughan, Anna and De Martini, Daniele and Fulton, James and Salvatelli, Valentina and Bridges, Chris and Mateo-Garcia, Gonzalo and Zantedeschi, Valentina},
+	month = oct,
+	year = {2022},
+	pages = {16939},
+}
 @inproceedings{ravaen2021,
   title = {Unsupervised {Change} {Detection} of {Extreme} {Events} {Using} {ML} {On}-{Board}},
   url = {http://arxiv.org/abs/2111.02995},
