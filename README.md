@@ -16,6 +16,7 @@
 <p align="center">
    <a href="https://www.nature.com/articles/s41598-022-19437-5"> Nature Scientific Reports Paper </a> •
   <a href="https://arxiv.org/abs/2111.02995">NeurIPS workshop paper</a> •
+  in media <a href="https://www.ox.ac.uk/news/2023-07-28-researchers-successfully-train-machine-learning-model-outer-space-first-time">1</a>, <a href="https://philab.esa.int/world-breakthrough-in-onboard-ai-model-training-presented-by-%cf%86-lab-at-igarss/">2</a> •
   <a href="https://www.youtube.com/watch?v=ALtYfcuLzxI">video from AI+HADR'21</a> •
   <a href="https://colab.research.google.com/github/spaceml-org/RaVAEn/blob/master/notebooks/inference_demo.ipynb">Quick Colab Example <img src="https://colab.research.google.com/assets/colab-badge.svg" height=16px></a>
 </p>
@@ -94,9 +95,9 @@ Our project is named after the two ravens in Norse mythology who are helping spi
 > Two ravens sit on his (Odin’s) shoulders and whisper all the news which they see and hear into his ear; they are called Huginn and Muninn. He sends them out in the morning to fly around the whole world, and by breakfast they are back again. Thus, he finds out many new things and this is why he is called ‘raven-god’ (hrafnaguð). ([source](https://norse-mythology.org/gods-and-creatures/others/hugin-and-munin/))
 
 ## Citation
-If you find RaVAEn useful in your research, please consider citing the following paper:
+If you find RaVAEn useful in your research, please consider citing the following papers:
 ```
- @article{ruzicka_ravaen_2022,
+@article{ruzicka_ravaen_2022,
 	title = {{RaVÆn}: unsupervised change detection of extreme events using {ML} on-board satellites},
 	volume = {12},
 	issn = {2045-2322},
@@ -104,19 +105,20 @@ If you find RaVAEn useful in your research, please consider citing the following
 	doi = {10.1038/s41598-022-19437-5},
 	number = {1},
 	journal = {Scientific Reports},
-	author = {Růžička, Vít and Vaughan, Anna and De Martini, Daniele and Fulton, James and Salvatelli, Valentina and Bridges, Chris and Mateo-Garcia, Gonzalo and Zantedeschi, Valentina},
+	author = {Růžička, Vít and Vaughan, Anna and De Martini, Daniele and Fulton, James and Salvatelli, Valentina and Bridges, Chris and Mateo-García, Gonzalo and Zantedeschi, Valentina},
 	month = oct,
 	year = {2022},
 	pages = {16939},
 }
-@inproceedings{ravaen2021,
-  title = {Unsupervised {Change} {Detection} of {Extreme} {Events} {Using} {ML} {On}-{Board}},
-  url = {http://arxiv.org/abs/2111.02995},
-  booktitle = {Artificial {Intelligence} for {Humanitarian} {Assistance} and {Disaster} {Response} {Workshop}, 35th {Conference} on {Neural} {Information} {Processing} {Systems} ({NeurIPS} 2021), {Vancouver}, {Canada}},
-  author = {Růžička, Vít and Vaughan, Anna and De Martini, Daniele and Fulton, James and Salvatelli, Valentina and Bridges, Chris and Mateo-Garcia, Gonzalo and Zantedeschi, Valentina},
-  month = nov,
-  year = {2021},
-  note = {arXiv: 2111.02995}
+
+@inproceedings{ravaen2023fast,
+  title={Fast model inference and training on-board of Satellites},
+  url = {https://arxiv.org/abs/2307.08700},
+  booktitle = {International Geoscience and Remote Sensing Symposium (IGARSS) 2023, {Pasadena}, {California}, {USA}},
+  author={Růžička, Vít and Mateo-García, Gonzalo and Bridges, Chris and Brunskill, Chris and Purcell, Cormac and Longépé, Nicolas and Markham, Andrew},
+  month = jul,
+  year={2023},
+  note = {arXiv: 2307.08700}
 }
 ```
 
